@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Anime GIF Keyboard</string>
+    <!-- <string name="subtype_en_US">Anime GIF Keyboard</string> -->
+    <string name="add_favorites_message">Add A Favorite GIF/Image \n By Tapping A Heart Icon</string>
+
+    <string name="content_provider_authority">com.vedantroy.animefacekeyboard.commitcontent.ime.inputcontent</string>
+
+    <string name="NO">NO</string>
+    <string name="NOT_SURE">Not Sure</string>
+    <string name="YES">YES</string>
+
+    <string name="give_feedback">Give Feedback</string>
+    <string name="provide_feedback_question">Do you want to provide feedback?</string>
+
+    <string name="rate_app">Rate App</string>
+    <string name="rate_app_question">Do you want to rate this app?</string>
+
+    <!--
+    <string name="warning_message_one">%1$s does not support %2$s s. %2$s support disabled.</string>
+    <string name="warning_message_two">%1$s does not support GIFs or PNGs. GIF and PNG support disabled. </string>
+
+    -->
+    <string name="warning_message_one_no_app_name">The current app does not support %1$ss.</string>
+    <string name="warning_message_two_no_app_name">The current app does not support GIFs or static images.</string>
+    <string name="GIF">GIF</string>
+    <string name="static_image">static image</string>
+    <string name="warning_message_no_database_connection">No connection to database. Check your internet.</string>
+
+    <string name="favorites_tab_title">Favorite</string>
+
+    <string name="unset_text">Unset-Text</string>
+
+    <string name="enable_keyboard_msg">Enable Keyboard</string>
+    <string name="keyboard_enabled_msg">Keyboard Enabled</string>
+
+    <string name="use_keyboard_msg">Usage Instructions</string>
+
+    <string name="destination_email_address">vroy101@gmail.com</string>
+    <string name="email_placeholder_msg">Insert your feedback here…</string>
+    <string name="email_error_msg">Error - Failed to Send Email!</string>
+    <string name="contact_me_button_text">Contact</string>
+
+    <string name="privacy_policy_button_title">Privacy Policy</string>
+
+    <string name="privacy_policy_text"><![CDATA[
+    <p>TL;DR The app only collects data for fixing crashes. This improves both our lives.</p>
+<h3><strong>Collected data</strong></h3>
+<p><i>Anime Face Keyboard </i>gathers anonymous usage and crash information. In the case of crash reports on Crashlytics, some information concerning the device is visible, such as make and model, free storage space and memory available.Information such as your email address, identity, IP-address, MAC-address, Bluetooth device name, etc., are <i>not</i> collected.</p>
+<h3><strong>Services used</strong></h3>
+<p><i>Anime Face Keyboard </i>uses the following services:</p>
+<ul><li>- Google Play, which offers limited insights into reviews and crashes;</li></ul>
+<ul><li>- Crashlytics, which provides more detailed insights into crashes.</li></ul>
+<h3><strong>Usage</strong></h3>
+<p>Crash information allows the developers to research problems in the app and fix them, thus making the app more stable. </p>
+    ]]></string>
+
+    <string name="OK">OK</string>
+    <string name="rate_button_text">Rate/Give Feedback</string>
+
+
+</resources>

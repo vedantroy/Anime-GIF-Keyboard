@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".home.MainActivity">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/warningRecyclerView"
+        android:background="@color/keyboard_lightcolor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tabRecyclerView"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tabRecyclerView"
+        android:background="@color/keyboard_darkcolor"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/warningRecyclerView"
+        app:layout_constraintBottom_toTopOf="@id/imageRecyclerView"
+        android:scrollbars="horizontal"
+        android:scrollbarThumbHorizontal="@color/teal"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="4dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/imageRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/tabRecyclerView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/keyboard_lightcolor"
+        android:gravity="center"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/add_favorites_message"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabRecyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMaxTextSize="18sp"
+        android:background="@color/keyboard_lightcolor"
+        android:text="@string/add_favorites_message"
+        android:visibility="gone"
+        android:gravity="center"
+        android:lines="2"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

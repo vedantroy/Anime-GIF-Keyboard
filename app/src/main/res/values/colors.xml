@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="teal">#80cbc4</color>
+    <color name="error_red">#A53860</color>
+    <color name="dark_text_color">#ff757575</color>
+    <color name="heart_red">#E33534</color>
+    <color name="keyboard_darkcolor">#E3E7EA</color>
+    <color name="keyboard_lightcolor">#EDEEF2</color>
+
+</resources>

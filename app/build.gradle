@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+//Added for Crashlytics
+apply plugin: 'io.fabric'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('C:/Users/vroy1/.android/debug.keystore')
+            storePassword 'android'
+        }
+    }
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.vedantroy.animefacekeyboard"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 7
+        versionName "1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            minifyEnabled false
+            debuggable true
+        }
+    }
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //Added for Crashlytics
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.4'
+
+    //Support Libraries
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-vector-drawable:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+
+    //Circle Checkbox
+    implementation 'com.github.lguipeng:AnimCheckBox:1.0.1'
+
+
+    // File Utilities
+    implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+
+    //Divider Library
+    implementation 'com.yqritc:recyclerview-flexibledivider:1.4.0'
+
+    //Coroutine Support
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:0.22.5'
+
+    //Material Progress Bar
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.4.2'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+
+    //Networking Libraries
+    implementation 'com.github.kittinunf.fuel:fuel-android:1.13.0'
+
+    //JSON Libraries
+    implementation 'com.google.code.gson:gson:2.8.4'
+
+    //Testing Libraries
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.google.android.gms:play-services-plus:15.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+//Added for Crashlytics
+apply plugin: 'com.google.gms.google-services'
